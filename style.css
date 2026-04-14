@@ -88,13 +88,12 @@ header {
 /* MAIN CONTENT */
 /* FEATURES */
 main {
-  padding: 50px;
   color: rgb(7, 106, 7);
 }
 
 main h2 {
   text-align: center;
-  margin: 0 0 40px;
+  margin: 40px 0;
 }
 
 .features {
@@ -135,4 +134,58 @@ main h2 {
   color: rgb(88, 86, 86);
   font-size: 14px;
   line-height: 1.4;
+}
+
+/* TESTIMONIAL AND CTA */
+.testimonial-cta-content {
+  background: url("images/background.png");
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.testimonial img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial p {
+  color: rgb(88, 86, 86);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: 15px;
+}
+
+.cta p {
+  color: rgb(88, 86, 86);
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.cta a.cta-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
 }
