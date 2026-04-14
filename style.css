@@ -294,15 +294,53 @@ img {
   MOBILE (≤ 768px)
 ========================= */
 @media (max-width: 768px) {
+  header {
+    background-position: center;
+  }
+
   /* NAV */
   .nav-bar {
-    flex-direction: column;
-    gap: 15px;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 15px;
+    border-radius: 8px;
   }
 
   .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+
+    /* FIXED ANIMATION */
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links a:not(.cta-button) {
+    padding: 8px 0;
+    width: 100%;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 
   /* HERO */
@@ -314,10 +352,12 @@ img {
   .hero h1 {
     font-size: 30px;
     line-height: 1.2;
+    color: rgb(3, 64, 3);
   }
 
   .hero p {
     font-size: 15px;
+    color: rgb(48, 47, 47);
   }
 
   /* FEATURES */
@@ -360,5 +400,31 @@ img {
 
   .feature {
     padding: 20px;
+  }
+}
+
+/* HIDE CHECKBOX */
+#menu-toggle {
+  display: none;
+}
+
+/* HAMBURGER ICON */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(7, 106, 7);
+  padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links a:not(:last-child) {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    text-align: center;
   }
 }
