@@ -6,9 +6,11 @@ body {
 
 /* HEADER */
 header {
-  background-color: white;
-  color: #333;
-  padding: 5px 0 80px;
+  background: url("images/heroImg.png");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  padding: 5px 50px 80px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -17,6 +19,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav-bar .logo img {
+  width: 180px;
+  border-radius: 6px;
 }
 
 /* NAV LINKS */
@@ -28,27 +35,52 @@ header {
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: rgb(7, 106, 7);
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: rgb(226, 191, 100);
+  color: rgb(224, 163, 11);
 }
 
-/* SIGN UP BUTTON */
-.nav-links a.signup-link {
-  background-color: rgb(226, 191, 100);
+/* BUTTONS */
+.cta-button {
+  background-color: rgb(224, 163, 11);
   padding: 8px 16px;
   border-radius: 6px;
-  color: white;
-  border: 2px solid transparent;
+  color: rgb(7, 106, 7);
+  cursor: pointer;
+  border: none;
   transition: all 0.3s ease;
 }
 
-.nav-links a.signup-link:hover {
-  background-color: white;
-  color: rgb(226, 191, 100);
-  border: 2px solid rgb(226, 191, 100);
+.cta-button:hover {
+  background-color: rgb(226, 191, 100);
+  color: rgb(7, 106, 7) !important;
+  border: none;
+}
+
+/* HERO SECTION */
+.hero {
+  padding-top: 50px;
+}
+
+.hero h1 {
+  color: rgb(7, 106, 7);
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: rgb(88, 86, 86);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero a {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px 24px;
 }
