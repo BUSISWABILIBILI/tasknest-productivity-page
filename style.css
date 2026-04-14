@@ -84,3 +84,55 @@ header {
   font-size: 16px;
   padding: 12px 24px;
 }
+
+/* MAIN CONTENT */
+/* FEATURES */
+main {
+  padding: 50px;
+  color: rgb(7, 106, 7);
+}
+
+main h2 {
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.features {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.feature {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature img {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  margin: 10px 0;
+}
+
+.feature p {
+  color: rgb(88, 86, 86);
+  font-size: 14px;
+  line-height: 1.4;
+}
