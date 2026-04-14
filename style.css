@@ -1,19 +1,54 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Page */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #f9fafb;
 }
 
-/* Center everything */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+/* HEADER */
+header {
+  background-color: white;
+  color: #333;
+  padding: 5px 0 80px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* NAV BAR */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: rgb(226, 191, 100);
+}
+
+/* SIGN UP BUTTON */
+.nav-links a.signup-link {
+  background-color: rgb(226, 191, 100);
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: white;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-links a.signup-link:hover {
+  background-color: white;
+  color: rgb(226, 191, 100);
+  border: 2px solid rgb(226, 191, 100);
 }
