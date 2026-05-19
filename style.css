@@ -82,7 +82,7 @@ header {
 }
 
 .nav-links a.cta-button.active {
-  color: rgb(7, 106, 7);
+  color: #143016;
 }
 
 /* BUTTONS */
@@ -90,7 +90,7 @@ header {
   background-color: rgb(224, 163, 11);
   padding: 8px 16px;
   border-radius: 6px;
-  color: rgb(7, 106, 7);
+  color: #143016;
   cursor: pointer;
   border: none;
   display: inline-block;
@@ -101,7 +101,7 @@ header {
 
 .cta-button:hover {
   background-color: rgb(226, 191, 100);
-  color: rgb(7, 106, 7) !important;
+  color: #143016 !important;
   border: none;
 }
 
