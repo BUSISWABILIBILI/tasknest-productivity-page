@@ -21,6 +21,7 @@ https://github.com/BUSISWABILIBILI/tasknest-productivity-page
 - Feature cards for task management, notes, reminders, and syncing
 - About page explaining the product idea
 - Dedicated signup page with form validation
+- Contact page with a message form
 - Mobile navigation menu
 - Accessible skip link and visible keyboard focus styles
 - Footer with navigation and license link
@@ -37,6 +38,7 @@ https://github.com/BUSISWABILIBILI/tasknest-productivity-page
 tasknest-productivity-page/
 |-- index.html
 |-- about.html
+|-- contact.html
 |-- signup.html
 |-- style.css
 |-- LICENSE
@@ -54,11 +56,11 @@ No build step or dependency installation is required because this is a static HT
 
 - `index.html` - Homepage with hero, features, testimonial, and CTA sections
 - `about.html` - About page for the TaskNest concept
+- `contact.html` - Contact page with a simple message form
 - `signup.html` - Signup page with a simple validated form
 
 ## Future Improvements
 
-- Add a contact page
 - Add privacy and terms pages
 - Connect the signup form to a backend or form service
 - Add a project screenshot to the README

@@ -28,6 +28,7 @@ body {
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
+textarea:focus-visible,
 .menu-icon:focus-visible {
   outline: 3px solid rgb(224, 163, 11);
   outline-offset: 3px;
@@ -132,6 +133,11 @@ header {
 }
 
 .signup-header {
+  min-height: auto;
+  padding-bottom: 30px;
+}
+
+.contact-header {
   min-height: auto;
   padding-bottom: 30px;
 }
@@ -323,7 +329,8 @@ main > h2 {
 }
 
 /* SIGNUP */
-.signup-section {
+.signup-section,
+.contact-section {
   display: flex;
   gap: 40px;
   align-items: center;
@@ -333,7 +340,8 @@ main > h2 {
   padding: 60px 50px;
 }
 
-.signup-page-main {
+.signup-page-main,
+.contact-page-main {
   min-height: 55vh;
 }
 
@@ -341,24 +349,29 @@ main > h2 {
   align-items: flex-start;
 }
 
-.signup-copy {
+.signup-copy,
+.contact-copy {
   max-width: 440px;
 }
 
 .signup-copy h1,
-.signup-copy h2 {
+.signup-copy h2,
+.contact-copy h1 {
   color: rgb(7, 106, 7);
   margin: 0 0 15px;
   text-align: left;
 }
 
 .signup-copy p,
-.signup-message {
+.signup-message,
+.contact-copy p,
+.form-message {
   color: rgb(88, 86, 86);
   line-height: 1.6;
 }
 
-.signup-form {
+.signup-form,
+.contact-form {
   display: grid;
   gap: 12px;
   width: min(100%, 420px);
@@ -368,11 +381,14 @@ main > h2 {
   padding: 28px;
 }
 
-.signup-form label {
+.signup-form label,
+.contact-form label {
   font-weight: 600;
 }
 
-.signup-form input {
+.signup-form input,
+.contact-form input,
+.contact-form textarea {
   border: 1px solid #d9e2dc;
   border-radius: 6px;
   color: rgb(48, 47, 47);
@@ -380,16 +396,25 @@ main > h2 {
   padding: 12px;
 }
 
-.signup-form input:focus {
+.contact-form textarea {
+  resize: vertical;
+}
+
+.signup-form input:focus,
+.contact-form input:focus,
+.contact-form textarea:focus {
   border-color: rgb(7, 106, 7);
   outline: 2px solid rgba(7, 106, 7, 0.15);
 }
 
-.signup-form input:invalid:not(:placeholder-shown) {
+.signup-form input:invalid:not(:placeholder-shown),
+.contact-form input:invalid:not(:placeholder-shown),
+.contact-form textarea:invalid:not(:placeholder-shown) {
   border-color: #b42318;
 }
 
-.signup-form button {
+.signup-form button,
+.contact-form button {
   font: inherit;
   margin-top: 8px;
 }
@@ -400,7 +425,8 @@ main > h2 {
   margin: -6px 0 4px;
 }
 
-.signup-message {
+.signup-message,
+.form-message {
   color: rgb(7, 106, 7);
   font-weight: 600;
   min-height: 24px;
@@ -513,18 +539,21 @@ img {
     gap: 30px;
   }
 
-  .signup-section {
+  .signup-section,
+  .contact-section {
     flex-direction: column;
     padding: 50px 30px;
   }
 
-  .signup-copy {
+  .signup-copy,
+  .contact-copy {
     max-width: 100%;
     text-align: center;
   }
 
   .signup-copy h1,
-  .signup-copy h2 {
+  .signup-copy h2,
+  .contact-copy h1 {
     text-align: center;
   }
 
@@ -638,7 +667,8 @@ img {
 
   .about-section,
   .about-cta,
-  .signup-section {
+  .signup-section,
+  .contact-section {
     padding: 30px 20px;
   }
 
