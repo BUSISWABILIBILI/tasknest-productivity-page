@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div class="container">
       <header class="signup-header">
         <nav class="nav-bar">
@@ -15,7 +16,12 @@
           </div>
 
           <input type="checkbox" id="menu-toggle" />
-          <label for="menu-toggle" class="menu-icon">&#9776;</label>
+          <label
+            for="menu-toggle"
+            class="menu-icon"
+            aria-label="Open navigation menu"
+            >&#9776;</label
+          >
 
           <div class="nav-links">
             <a href="index.html">Home</a>
@@ -26,7 +32,7 @@
         </nav>
       </header>
 
-      <main class="signup-page-main">
+      <main class="signup-page-main" id="main-content">
         <section class="signup-section signup-page-section">
           <div class="signup-copy">
             <h1>Create your TaskNest account</h1>

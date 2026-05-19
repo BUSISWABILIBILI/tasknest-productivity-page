@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div class="container">
       <header>
         <nav class="nav-bar">
@@ -18,7 +19,12 @@
           <input type="checkbox" id="menu-toggle" />
 
           <!-- HAMBURGER ICON -->
-          <label for="menu-toggle" class="menu-icon">&#9776;</label>
+          <label
+            for="menu-toggle"
+            class="menu-icon"
+            aria-label="Open navigation menu"
+            >&#9776;</label
+          >
 
           <div class="nav-links">
             <a href="index.html" class="active">Home</a>
@@ -39,7 +45,7 @@
         </section>
       </header>
 
-      <main>
+      <main id="main-content">
         <h2>Get Organized with TaskNest</h2>
         <section class="features" id="features">
           <div class="feature">

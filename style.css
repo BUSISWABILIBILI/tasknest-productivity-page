@@ -4,6 +4,29 @@ body {
   background-color: #f9fafb;
 }
 
+.skip-link {
+  background-color: rgb(7, 106, 7);
+  color: #fff;
+  left: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  text-decoration: none;
+  top: -48px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+.menu-icon:focus-visible {
+  outline: 3px solid rgb(224, 163, 11);
+  outline-offset: 3px;
+}
+
 /* HEADER */
 header {
   background: url("images/heroImg.png");
@@ -612,9 +635,18 @@ img {
   }
 }
 
-/* HIDE CHECKBOX */
+/* VISUALLY HIDE CHECKBOX */
 #menu-toggle {
-  display: none;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+#menu-toggle:focus-visible + .menu-icon {
+  outline: 3px solid rgb(224, 163, 11);
+  outline-offset: 3px;
 }
 
 /* HAMBURGER ICON */
