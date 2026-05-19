@@ -81,6 +81,10 @@ header {
   font-weight: 700;
 }
 
+.nav-links a.cta-button.active {
+  color: rgb(7, 106, 7);
+}
+
 /* BUTTONS */
 .cta-button {
   background-color: rgb(224, 163, 11);
