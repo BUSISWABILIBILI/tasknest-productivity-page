@@ -1,55 +1,73 @@
-# TaskNest 🪺
+# TaskNest Productivity Page
 
-A modern and clean landing page for a productivity web application designed to help users organize their tasks, notes, and reminders — all in one place.
+TaskNest is a responsive productivity landing page for a web app concept that helps users manage tasks, notes, and reminders in one organized place.
 
-## 🚀 Overview
+## Overview
 
-TaskNest is a simple yet powerful concept for a productivity app that brings together:
+The project presents a clean product-style website for TaskNest with a homepage, About page, and dedicated Sign Up page. It was built to practice frontend fundamentals, responsive layouts, navigation, forms, and accessible HTML structure.
 
-* Task management
-* Note-taking
-* Reminders
-* Cross-device syncing
+## Live Preview
 
-This project was built as part of a frontend learning journey to practice HTML and CSS layout techniques, especially Flexbox.
+https://busiswabilibili.github.io/tasknest-productivity-page/
 
-## 🎯 Features
+## Repository
 
-* Responsive landing page layout
-* Hero section with call-to-action
-* Feature cards showcasing core functionality
-* Testimonial section
-* Call-to-action banner
-* Clean and modern UI design
+https://github.com/BUSISWABILIBILI/tasknest-productivity-page
 
-## 🛠️ Built With
+## Features
 
-* HTML5
-* CSS3 (Flexbox)
+- Responsive homepage layout
+- Hero section with clear call-to-action buttons
+- Feature cards for task management, notes, reminders, and syncing
+- About page explaining the product idea
+- Dedicated signup page with form validation
+- Mobile navigation menu
+- Accessible skip link and visible keyboard focus styles
+- Footer with navigation and license link
 
-## 📁 Project Structure
+## Built With
 
-tasknest-productivity-app/
-│── index.html
-│── style.css
-│── images/
-│── README.md
+- HTML5
+- CSS3
+- JavaScript for signup form feedback
 
-## 💡 Inspiration
+## Project Structure
 
-The design is inspired by modern SaaS landing pages with a focus on simplicity, usability, and visual clarity.
+```text
+tasknest-productivity-page/
+|-- index.html
+|-- about.html
+|-- signup.html
+|-- style.css
+|-- LICENSE
+|-- README.md
+|-- images/
+```
 
-## 📌 Future Improvements
+## How To Run Locally
 
-* Add JavaScript interactivity
-* Make fully responsive for mobile devices
-* Add animations and hover effects
-* Connect to a real backend (future goal)
+Open `index.html` in your browser.
 
-## 👩‍💻 Author
+No build step or dependency installation is required because this is a static HTML, CSS, and JavaScript project.
+
+## Pages
+
+- `index.html` - Homepage with hero, features, testimonial, and CTA sections
+- `about.html` - About page for the TaskNest concept
+- `signup.html` - Signup page with a simple validated form
+
+## Future Improvements
+
+- Add a contact page
+- Add privacy and terms pages
+- Connect the signup form to a backend or form service
+- Add a project screenshot to the README
+- Deploy the site with GitHub Pages, Netlify, or Vercel
+
+## Author
 
 Busiswa Bili-bili
 
----
+## License
 
-✨ “Everything you need. One nest.”
+This project is licensed under the MIT License.
