@@ -338,12 +338,24 @@ main h2 {
   outline: 2px solid rgba(7, 106, 7, 0.15);
 }
 
+.signup-form input:invalid:not(:placeholder-shown) {
+  border-color: #b42318;
+}
+
 .signup-form button {
   font: inherit;
   margin-top: 8px;
 }
 
+.form-help {
+  color: rgb(88, 86, 86);
+  font-size: 13px;
+  margin: -6px 0 4px;
+}
+
 .signup-message {
+  color: rgb(7, 106, 7);
+  font-weight: 600;
   min-height: 24px;
   margin: 0;
 }
