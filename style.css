@@ -1,4 +1,8 @@
 /* Page */
+:root {
+  --cta-text-color: #143016;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -76,13 +80,18 @@ header {
   color: rgb(224, 163, 11);
 }
 
+.nav-links a.cta-button {
+  color: var(--cta-text-color);
+  font-weight: 700;
+}
+
 .nav-links a.active {
   color: rgb(224, 163, 11);
   font-weight: 700;
 }
 
 .nav-links a.cta-button.active {
-  color: #143016;
+  color: var(--cta-text-color);
 }
 
 /* BUTTONS */
@@ -90,7 +99,7 @@ header {
   background-color: rgb(224, 163, 11);
   padding: 8px 16px;
   border-radius: 6px;
-  color: #143016;
+  color: var(--cta-text-color);
   cursor: pointer;
   border: none;
   display: inline-block;
@@ -101,7 +110,7 @@ header {
 
 .cta-button:hover {
   background-color: rgb(226, 191, 100);
-  color: #143016 !important;
+  color: var(--cta-text-color) !important;
   border: none;
 }
 
