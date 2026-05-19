@@ -420,7 +420,7 @@ img {
 }
 
 /* =========================
-  TABLET (≤ 1024px)
+  TABLET (max-width: 1024px)
 ========================= */
 @media (max-width: 1024px) {
   header {
@@ -473,7 +473,7 @@ img {
 }
 
 /* =========================
-  MOBILE (≤ 768px)
+  MOBILE (max-width: 768px)
 ========================= */
 @media (max-width: 768px) {
   header {
@@ -579,7 +579,7 @@ img {
 }
 
 /* =========================
-  SMALL MOBILE (≤ 480px)
+  SMALL MOBILE (max-width: 480px)
 ========================= */
 @media (max-width: 480px) {
   .hero h1 {
